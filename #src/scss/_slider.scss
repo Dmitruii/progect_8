@@ -1,0 +1,58 @@
+@import 'var';
+@import 'fonts';
+
+.section__slider {
+}
+.container {
+}
+.slider__body {
+    background-image: url('../img/bgSlider.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 193px;
+    & .slick-track {
+        display: flex;
+    }
+    & .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 63px 0 0 0;
+        & button {
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background: $maincolor;
+            border: none;
+        }
+        & .slick-active button {
+            background: transparent;
+            border: 1px solid $dotscolor;
+            transition: all 0.5s ease 0s;
+        }
+    }
+}
+.slick-dots .slick-active button {
+    background: $dotscolor;
+}
+.slider__title {
+    font-family: "RobotoCondensed-Regular";
+    color: #fff;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin: 36px 0 0 0;
+}
+.slider__pre-slider {
+    display: none;
+}
+.slider__item {
+    display: flex;
+    flex-direction: column;
+}
+.slider__link {
+    display: none;
+}

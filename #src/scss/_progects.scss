@@ -1,0 +1,72 @@
+@import 'var';
+@import 'fonts';
+
+.section__progects {
+}
+.cintainer {
+}
+.progects__body {
+    background: linear-gradient(180deg, rgba(43,64,116,1) 0%, rgba(255,255,255,1) 100%);
+}
+.progects__title {
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "RobotoCondensed-Bold";
+    text-align: center;
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+.progect__tilte {
+    @extend .progects__title;
+    color: $maincolor;
+}
+.progects__line {
+    display: block;
+    margin: 20px auto 40px auto;
+    width: 100px;
+    height: 8px;
+    background: #fff;    
+}
+.progects__items {
+}
+.progects__items__row {
+}
+.progects__item {
+    width: 280px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.progects__item:hover .progects__block-hover{
+    transform: translateX(0);
+}
+.progects__block-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    z-index: 2;
+    transform: translateX(-150%);
+    transition: all 0.3s ease 0s;
+}
+.progects__block-hover__icons .fas {
+    color: $maincolor;
+    font-size: 28px;
+    margin: 0 5px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        color: $gray2;
+    }
+}
+.progects__item-img {
+    position: relative;
+}

@@ -1,0 +1,111 @@
+@import 'var';
+
+.header {
+}
+.container {
+}
+.header__body {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background: $maincolor;
+    height: 80px;
+}
+.header__logo {
+}
+.header__menu-burger {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    z-index: 6;
+    transition: all 0.3s ease 0s;
+}
+.header__menu-burger.active .header__menu-burger-inner {
+    &:before {
+        transform: rotate(45deg);
+        bottom: 5px;
+        background: #fff; 
+    }
+    &:after {
+        transform: rotate(-45deg);
+        top: 5px;
+        background: #fff;
+    }
+    & span {
+        transform: scaleX(0);
+        background: #fff;
+    }
+}
+.header__menu-burger.active {
+    background: transparent;
+    &  ~ .header__menu {
+        transform: translateY(0);
+    }
+}
+.header__menu-burger-inner {
+    position: relative;
+    width: 14px;
+    height: 12px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;left: 0;
+        width: 100%;
+        height: 2px;
+        background: $maincolor;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 2px;
+        background: $maincolor;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+    }
+}
+.header__menu-burger span {
+    position: absolute;
+    top: 5px;left: 0;
+    width: 100%;
+    height: 2px;
+    background: $maincolor;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.header__menu {
+    position: fixed;
+    top: 0;left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: $maincolor;
+    padding: 20px 10px;
+    transition: all 0.3s ease 0s;
+    transform: translateY(-100%);
+    z-index: 5;
+}
+.header__list {
+}
+.header__list li {
+    margin: 20px;
+    font-size: 16px;
+}
+.header__link {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}

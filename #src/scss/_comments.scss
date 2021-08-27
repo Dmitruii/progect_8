@@ -1,0 +1,54 @@
+@import 'var';
+@import 'fonts';
+
+.comments__body {
+    overflow: hidden;
+    margin: 60px 25px 100px 25px;
+}
+.comments__slider {
+    & .slick-track {
+        display: flex;
+    }
+    & .slick-dots {
+        display: flex;
+        justify-content: center;
+        & button {
+            font-size: 0;
+            border: 1px solid $maincolor;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+        }
+    }
+}
+.quote__span {
+    color: $maincolor;
+}
+.comments__slider-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    & .fas {
+        font-size: 42px;
+        color: $maincolor;
+        margin: 0 0 40px 0;
+    }
+}
+.comments__quote {
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 24px;
+    line-height: 26px;
+    color: #4A4A4A;
+}
+.comments__author {
+    margin: 20px 0 40px;
+    font-family: 'RobotoCondensed-Bold';
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+    position: relative;
+}

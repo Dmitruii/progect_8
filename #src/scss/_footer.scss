@@ -1,0 +1,138 @@
+@import 'var';
+@import 'fonts';
+
+.footer__body {
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+}
+.footer__logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    width: 230px;
+    background: $maincolor;
+    border-radius: 3px;
+}
+.footer {
+    background: $maincolor;
+}
+.container {
+}
+.footer__inv {
+    padding: 55px 0 0 0;
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    & i {
+        margin: 8px 0;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+.footer__title {
+    font-family: 'RobotoCondensed-Bold';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #F9F6E5;
+    text-transform: uppercase;
+}
+.footer__info {
+}
+.footer__contact {
+}
+.footer__title {
+}
+.footer__contact__links,
+.footer__adress__links,
+.footer__help__links, 
+.footer__menu__links {
+    margin: 15px auto 0 auto;
+    text-align: center;
+    a {
+        font-family: 'Roboto-Light';
+        font-size: 16px;
+        line-height: 125%;
+        text-align: center;
+        color: #FFFFFF;
+        display: block;
+    } 
+}
+.footer__contact,
+.footer__adress,
+.footer__help, 
+.footer__menu {
+    margin: 40px 0;
+}
+.footer__tel {
+}
+.footer__mail {
+}
+.footer__adress {
+}
+.footer__cart {
+}
+.footer__help {
+}
+.footer__link-help {
+}
+.footer__menu {
+}
+.footer__menu__links {
+}
+.footer__menu__link {
+}
+.footer__bottom {
+    background: #fff;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link__arrow {
+    font-family: 'Roboto-Light';
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $gray;
+    text-transform: uppercase;
+}
+.arrow__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &::before,&::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 15px;
+        height: 2px;
+        background: $maincolor;
+    }
+    &::before {
+        left: 17px;
+        transform: rotate(-45deg);
+    }
+    &::after {
+        right: 17px;
+        transform: rotate(45deg);
+    }
+}

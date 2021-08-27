@@ -1,0 +1,120 @@
+@import 'var';
+@import 'fonts';
+
+.section__service {
+    margin: 20px 0 40px 0;
+}
+.container {
+}
+.service__body {
+}
+.service__text {
+}
+.service__title {
+    color: $maincolor; 
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'RobotoCondensed-Regular';
+    text-align: center;
+}
+.service__reverse-blocks {
+    margin: 20px 0;
+}
+.service__text__line {
+    width: 100px;
+    height: 8px;
+    background: $maincolor;
+    margin: 0 auto;
+    display: block;
+}
+.service__pre-title {
+    width: 280px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-family: 'RobotoCondensed-Regular';
+    color: $gray;
+    font-size: 20px;
+    line-height: 24px;
+}
+.service__paragraph {
+    width: 280px;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: 'RobotoCondensed-Regular';
+    text-align: center;
+    color: $gray2;
+    margin: 0 auto 40px auto;
+}
+.service__items {
+}
+.service__items__row {
+}
+.service__items__row-row {
+}
+.service__item {
+    height: 246px;
+    width: 277px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+}
+.service__item__img {
+}
+.service__item__tilte {
+    font-family: 'RobotoCondensed-Bold';
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+    text-align: center;
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+}
+.service__item__text {
+    font-family: "Roboto-Light";
+    color: $gray2;
+    width: 196px;
+    text-align: center;
+    margin: 21px 0 17px 0;
+}
+.service__item__link {
+    font-family: 'RobotoCondensed-Bold';
+    color: $maincolor;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 50px;
+        background: $maincolor;
+        transition: all 0.3s ease 0s;
+        transform: scaleX(0);
+    }
+    &:hover::before {
+        transform: scaleX(1);
+    }
+}
+.service__item:hover {
+    border: 4px solid $maincolor;
+    transition: all 0.3s ease 0s;
+    .service__item__text,
+    .service__item__link {
+        opacity: 1;
+        visibility: 1;
+        transform: translateY(0);
+    }
+}
+.service__item__text,
+.service__item__link {
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: 0;
+    transform: translateY(10px);
+}

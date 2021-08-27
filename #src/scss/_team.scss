@@ -1,0 +1,52 @@
+@import 'var';
+@import 'fonts';
+
+.section__team {
+}
+.container {
+}
+.team__body {
+}
+.team__img {
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+}
+.team__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__title {
+    font-family: "RobotoCondensed-Regular";
+    font-size: 24px;
+    line-height: 38px;  
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.team__line {
+    position: relative;
+    background: $maincolor;
+    width: 100px;
+    height: 8px;
+    margin: 0 0 23px 0;
+}
+.team__description {
+    font-family: 'Roboto-Light';
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: $gray2;
+    width: 280px;
+    margin: 0 auto 84px auto;
+}
+.team__link {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 18px;
+    color: $btncolor;
+    background: $maincolor;
+    font-family: 'Roboto-Medium';
+    padding: 21px 26px;
+    border-radius: 3px;
+}
