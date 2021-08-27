@@ -43,6 +43,19 @@
         margin: 8px 0;
         color: #fff;
         font-size: 24px;
+        transition: all 0.3s ease 0s;
+        &.fa-facebook-f:hover {
+            color: #4867AA;
+        }
+        &.fa-google-plus-g:hover {
+            color: #C94336;
+        }
+        &.fa-twitter:hover {
+            color: #28A9E0;
+        }
+        &.fa-pinterest:hover {
+            color: #D50123;
+        }
     }
 }
 .footer__title {
@@ -98,6 +111,9 @@
 .footer__menu__links {
 }
 .footer__menu__link {
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .footer__bottom {
     background: #fff;

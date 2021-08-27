@@ -75,5 +75,9 @@
     & .fas {
         color: #fff;
         font-size: 28px;
+        transition: all 0.2s ease 0s;
+        &:hover {
+            color: #555;
+        }
     } 
 }

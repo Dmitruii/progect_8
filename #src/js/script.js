@@ -20,4 +20,33 @@ $(document).ready(function () {
         dots: true,
         fade: true,
     });
+
+    // Anchors
+    const links = document.querySelectorAll('.scroll-link');
+    if (links.length > 0) {
+        for (let i = 0; i < links.length; i++) {
+            const link = links[i];
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const scrollToElem = document.querySelector(link.getAttribute('data-scrollTo'));
+                if (scrollToElem) {
+                    if (scrollToElem.offsetHeight > window.innerHeight) {
+                        e.preventDefault();   
+                        scrollToElem.scrollIntoView({
+                            block: "start",
+                            inline: "nearest",
+                            behavior: "smooth"
+                        });
+                    }else {
+                        e.preventDefault();   
+                        scrollToElem.scrollIntoView({
+                            block: "center",
+                            inline: "nearest",
+                            behavior: "smooth"
+                        });
+                    }
+                }
+            });
+        }
+    }
 });
