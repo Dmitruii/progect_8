@@ -75,9 +75,12 @@
     & .fas {
         color: #fff;
         font-size: 28px;
-        transition: all 0.2s ease 0s;
-        &:hover {
-            color: #555;
-        }
     } 
+}
+
+@media (min-width: 640px) {
+    .news__titile {
+        font-size: 48px;
+        line-height: 38px;
+    }
 }

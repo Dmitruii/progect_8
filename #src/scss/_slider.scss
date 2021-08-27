@@ -54,5 +54,91 @@
     flex-direction: column;
 }
 .slider__link {
+    text-transform: uppercase;
+    font-family: 'Roboto-Light';
+    font-size: 18px;
+    line-height: 18px;
+    color: #F9F6E5;
     display: none;
+    background: $maincolor;
+    padding: 16px 45px;
+    border-radius: 3px;
+}
+.slider__line {
+    width: 60px;
+    height: 8px;
+    background: $gray;
+    margin: 0 auto;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .slider__body {
+        position: relative;
+        height: 386px;
+        & .slick-arrow {
+            width: 56px;
+            height: 56px;
+            font-size: 0;
+            position: absolute;
+            right: 0;
+            z-index: 99;
+        }
+        & .slick-prev {
+            top: 36%;
+            background: $maincolor;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 2px;
+                background: #fff;
+            }
+            &::before {
+                top: 41%;
+                left: 40%;
+                transform: rotate(45deg);
+            }
+            &::after{
+                left: 40%;
+                bottom: 41%;
+                transform: rotate(-45deg);
+            }
+        }
+        & .slick-next {
+            background: #fff;
+            bottom: 36%;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 2px;
+                background: $maincolor;
+            }
+            &::before {
+                top: 41%;
+                left: 40%;
+                transform: rotate(-45deg);
+            }
+            &::after{
+                left: 40%;
+                bottom: 41%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .slider__title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .slider__line {
+        display: block;
+        margin: 7px auto 30px auto;
+    }
+    .slider__link {
+        display: block;
+        margin: 0 auto;
+    }
 }

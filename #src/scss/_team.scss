@@ -9,7 +9,7 @@
 }
 .team__img {
     width: 280px;
-    margin: 16px auto 0 auto;
+    margin: 0 auto;
     display: block;
 }
 .team__text {
@@ -49,9 +49,20 @@
     font-family: 'Roboto-Medium';
     padding: 21px 26px;
     border-radius: 3px;
-    transition: all 0.3s ease 0s;
-    &:hover {
-        background: transparent;
-        color: $maincolor;
+}
+
+@media (min-width: 640px) {
+    .team__body {
+        padding: 40px 0 0 0 ;
+    }
+    .section__team img {
+        width: 520px;
+    }
+    .team__title {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .team__description {
+        width: 520px;
     }
 }

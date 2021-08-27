@@ -44,3 +44,9 @@
         transition: all 0.2s ease 0s;
     }
 }
+
+@media (min-width: 640px) {
+    .call__text {
+        max-width: 580px; 
+    }
+}

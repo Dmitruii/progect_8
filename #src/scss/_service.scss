@@ -118,3 +118,31 @@
     visibility: 0;
     transform: translateY(10px);
 }
+
+@media (min-width: 640px) {
+    .service__pre-title,
+    .service__paragraph {
+        width: 560px;
+    }
+    .service__pre-title {
+        font-size: 24px;
+    }
+    .service__reverse-blocks {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .service__text__line {
+        margin: 30px auto 10px auto;
+    }
+    .service__paragraph {
+        font-size: 18px;
+    }
+    .service__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .service__items__row {
+        display: flex;
+        justify-content: center;
+    }
+}

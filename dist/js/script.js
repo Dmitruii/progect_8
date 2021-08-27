@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // // webp support
+    // webp support
 function testWebP(callback) {
     var webP = new Image();
     webP.onload = webP.onerror = function () {
@@ -26,8 +26,17 @@ testWebP(function (support) {
 
     // Slider
     $('.slider__body').slick({
+        mobileFirst: true,
         arrows: false,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 639,
+                settings: {
+                    arrows: true,
+                },
+            },
+        ],
     });
     $('.comments__slider').slick({
         arrows: false,
@@ -35,32 +44,32 @@ testWebP(function (support) {
         fade: true,
     });
 
-    // Anchors
-    const links = document.querySelectorAll('.scroll-link');
-    if (links.length > 0) {
-        for (let i = 0; i < links.length; i++) {
-            const link = links[i];
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const scrollToElem = document.querySelector(link.getAttribute('data-scrollTo'));
-                if (scrollToElem) {
-                    if (scrollToElem.offsetHeight > window.innerHeight) {
-                        e.preventDefault();   
-                        scrollToElem.scrollIntoView({
-                            block: "start",
-                            inline: "nearest",
-                            behavior: "smooth"
-                        });
-                    }else {
-                        e.preventDefault();   
-                        scrollToElem.scrollIntoView({
-                            block: "center",
-                            inline: "nearest",
-                            behavior: "smooth"
-                        });
-                    }
-                }
-            });
-        }
-    }
+     // Anchors
+     const links = document.querySelectorAll('.scroll-link');
+     if (links.length > 0) {
+         for (let i = 0; i < links.length; i++) {
+             const link = links[i];
+             link.addEventListener('click', function (e) {
+                 e.preventDefault();
+                 const scrollToElem = document.querySelector(link.getAttribute('data-scrollTo'));
+                 if (scrollToElem) {
+                     if (scrollToElem.offsetHeight > window.innerHeight) {
+                         e.preventDefault();   
+                         scrollToElem.scrollIntoView({
+                             block: "start",
+                             inline: "nearest",
+                             behavior: "smooth"
+                         });
+                     }else {
+                         e.preventDefault();   
+                         scrollToElem.scrollIntoView({
+                             block: "center",
+                             inline: "nearest",
+                             behavior: "smooth"
+                         });
+                     }
+                 }
+             });
+         }
+     }
 });

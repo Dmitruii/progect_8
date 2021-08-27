@@ -52,3 +52,9 @@
     color: #4A4A4A;
     position: relative;
 }
+
+@media (min-width: 640px) {
+    .comments__quote {
+        width: 550px;
+    }
+}
