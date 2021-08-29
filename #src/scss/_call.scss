@@ -50,3 +50,16 @@
         max-width: 580px; 
     }
 }
+@media (min-width: 768px) {
+    .call__body {
+        flex-direction: row;
+        padding: 60px 0 0 0;
+        .call__link {
+            margin: 0 0 45px 55px;
+        }
+        .call__text {
+            text-align: left;
+            width: 427px;
+        }
+    }
+}

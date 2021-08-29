@@ -138,3 +138,22 @@
         }    
     }
 }
+
+@media (min-width: 768px) {
+    .header__menu-burger {
+        display: none;
+    }
+    .header__menu {
+        position: static;
+        transform: none;
+        padding: 0;
+        .header__list {
+            display: flex;
+            width: 90%;
+            justify-content: space-evenly;
+            li {
+                margin: 0;
+            }
+        }
+    }
+}

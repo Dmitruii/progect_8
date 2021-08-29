@@ -146,3 +146,26 @@
         justify-content: center;
     }
 }
+
+@media (min-width: 768px) {
+    .service__title {
+        margin: 50px 0 0 0;
+    }   
+    .service__text__line {
+        margin: 30px 0 10px 0;
+    }
+    .service__pre-title {
+        margin: 20px 0 0 0;
+        width: auto;
+        text-align: left;
+    }
+    .service__body {
+        max-width: 689px;
+        margin: 0 auto;
+    }
+    .service__paragraph {
+        width: auto;
+        text-align: left;
+        margin: 0 0 40px 0;
+    }
+}

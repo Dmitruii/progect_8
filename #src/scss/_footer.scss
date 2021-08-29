@@ -195,3 +195,16 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .footer__body {
+        width: 690px;
+    }
+    .footer__info__row {
+        justify-content: flex-start;
+    }
+    .footer__contact,
+    .footer__help {
+        flex: 0 1 50%;
+    }
+}

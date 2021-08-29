@@ -142,3 +142,31 @@
         margin: 0 auto;
     }
 }
+
+@media (min-width: 768px) {
+    .slider__line {
+        display: none;
+    }
+    .slider__pre-slider {
+        display: block;
+        width: 587px;
+        font-family: 'RobotoCondensed-Regular';
+        font-size: 18px;
+        line-height: 111%;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 25px auto 32px auto;
+    }
+    .slider__body {
+        height: 465px;
+    }
+    .slider__title {
+        margin: 87px 0 0 0;
+    }
+    .slick-prev {
+        top: 38% !important;
+    }
+    .slick-next {
+        bottom: 38% !important;
+    }
+}

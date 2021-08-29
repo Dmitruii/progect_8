@@ -66,3 +66,28 @@
         width: 520px;
     }
 }
+@media (min-width: 768px) {
+    .section__team img {
+        width: 240px;
+    }
+    .team__body {
+        display: flex;
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+    }
+    .team__description {
+        width: auto;
+        margin: 0 0 21px 0;
+    }
+    .team__text {
+        margin: 0 0 0 34px;
+    }
+    .team__text {
+        align-items: flex-start;
+    }
+    .team__link {
+        margin: 0 0 0 -70px;
+    }
+}
