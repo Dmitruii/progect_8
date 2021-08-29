@@ -58,3 +58,11 @@
         width: 550px;
     }
 }
+@media (min-width: 1024px) {
+    .comments__quote {
+        width: auto;
+    }
+    .comments__author {
+        margin: 45px 0 -40px 0;
+    }
+}

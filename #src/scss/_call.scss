@@ -2,11 +2,11 @@
 @import 'fonts';
 
 .section__call {
+    background: $maincolor;
 }
 .container {
 }
 .call__body {
-    background: $maincolor;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,9 @@
     .call__text {
         max-width: 580px; 
     }
+    .call__link {
+        font-size: 18px;
+    }
 }
 @media (min-width: 768px) {
     .call__body {
@@ -61,5 +64,19 @@
             text-align: left;
             width: 427px;
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .call__body {
+        justify-content: space-between;
+        width: 940px;
+        margin: 0 auto;
+    }
+    .call__title {
+        font-style: 18px;
+    }
+    .call__paragraph {
+        font-size: 14px;
     }
 }

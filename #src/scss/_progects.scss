@@ -96,8 +96,18 @@
     }
     .progects__items__row {
         display: flex;
+        justify-content: center;
+    }
+    .progects__item {
+        margin: 20px 0;
+        &:nth-child(1) {
+            margin: 20px 20px 0 0;
+        }
     }
     .progects__title {
         padding: 80px 0 0 0;
     }
+}
+@media (min-width: 1024px) {
+    
 }

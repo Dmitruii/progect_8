@@ -170,3 +170,23 @@
         bottom: 38% !important;
     }
 }
+
+@media (min-width: 1024px) {
+    .slider__body {
+        height: 618px;
+    }
+    .slider__title {
+        margin: 101px 0 0 0;
+        font-size: 84px;
+        line-height: 84px;
+    }
+    .slick-dots {
+        margin: 112px 0 0 0 !important;
+    }
+    .slick-prev {
+        top: 41% !important;
+    }
+    .slick-next {
+        bottom: 41% !important;
+    }
+}
