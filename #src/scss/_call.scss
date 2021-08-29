@@ -80,3 +80,18 @@
         font-size: 14px;
     }
 }
+@media (min-width: 1440px) {
+    .call__body {
+        padding: 0;
+        height: 192px;
+        align-items: center;
+    }
+    .call__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .call__link {
+        margin: 0 !important;
+    }
+}

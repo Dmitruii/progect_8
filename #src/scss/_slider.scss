@@ -190,3 +190,26 @@
         bottom: 41% !important;
     }
 }
+
+@media (min-width: 1440px) {
+    .slider__title {
+        font-size: 96px;
+        line-height: 100%;
+    }
+    .slider__pre-slider {
+        font-size: 24px;
+        line-height: 26px;
+        width: 886px;
+    }
+    .slider__body {
+        height: 668px;
+        & .slick-dots {
+            & button {
+                background: #fff;
+            }
+            & .slick-active button {
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
